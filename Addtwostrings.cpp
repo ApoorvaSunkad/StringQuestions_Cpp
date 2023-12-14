@@ -24,6 +24,24 @@ Output: "0"
 //Rohit negi bhaiya's solution very beautifully explained in his video:
 //Video link: https://www.youtube.com/watch?v=iw9CK0ssgDU
 
+
+//My brute force approach
+//Got out of range error(RUNTIME ERROR)
+
+#include<bits/stdc++.h>
+using namespace std;
+
+string addStrings(string num1, string num2) {
+        //string str ="";
+
+        int numA = stoi(num1); //string to integer(stoi)
+        int numB = stoi(num2);
+
+        int sum = numA+numB;
+
+        return to_string(sum);
+}
+
 //T.C = O(N)
 //S.C = O(max(Len of num1, Len of num2))
 
