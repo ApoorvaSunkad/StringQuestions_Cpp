@@ -60,3 +60,25 @@ that meet the condition.
         }
         return ans;
 }
+
+
+
+//2nd approach
+
+#include<bits/stdc++.h>
+using namespace std;
+
+vector<int> findWordsContaining(vector<string>& words, char x) {
+        vector<int> result;
+        for (int i = 0; i < words.size(); i++) {
+            if (check(words[i], x)) result.push_back(i);
+        }
+        return result;
+    }
+
+    bool check(string& word, char x) {
+        for (auto& c : word) {
+            if (c == x) return true;
+        }
+        return false;
+    }
