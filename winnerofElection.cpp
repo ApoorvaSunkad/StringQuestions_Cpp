@@ -39,6 +39,9 @@ Expected Auxiliary Space: O(n)
 #include<bits/stdc++.h>
 using namespace std;
 
+//T.C = O(N)
+//S.C = O(N)
+
 vector<string> winner(string arr[],int n)
     {
         // Your code here
