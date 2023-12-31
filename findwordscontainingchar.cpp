@@ -47,7 +47,7 @@ that meet the condition.
         for(it=words.begin(); it!=words.end(); ++it){
             string s = *it;
 
-             bool found = false;
+            bool found = false;
             for(int i = 0; i<s.length();i++){
                 if(s[i]== x){
                     found = true;
