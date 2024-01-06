@@ -54,3 +54,25 @@ string removeDuplicates(string str) {
 	    
 	    return s;
 }
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+ string removeDuplicates(string str) {
+        //creating a hash table to store frequency of characters.
+        vector<int> hash(256, 0);
+        //declaring a string to store the final answer.
+        string ans;
+        //iterating over every character in the string.
+        for (char c : str) {
+            //if the character is encountered for the first time,
+            //adding it to the answer string and updating its frequency.
+            if (hash[c] == 0) {
+                ans.push_back(c);
+                hash[c]++;
+            }
+        }
+        //returning the answer string without duplicates.
+        return ans;
+}
