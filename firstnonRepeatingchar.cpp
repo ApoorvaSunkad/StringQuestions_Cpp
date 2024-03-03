@@ -71,4 +71,24 @@ char nonrepeatingCharacter(string S)
             }
         }
         return '$';
+}
+
+//Another O(N) solution
+
+char nonrepeatingCharacter(string S){
+    
+    int n = S.length();
+    
+    int arr[256] = {0};
+    
+    for(int i = 0; i<n; i++){
+        arr[S[i]]++;
     }
+    
+    for(int i = 0; i<n; i++){
+        if(arr[S[i]]==1){
+            return (char)S[i];
+        }
+    }
+    return '$';
+}
